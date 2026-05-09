@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package iot_service;
+
+service SensorService {
+  rpc GetUltimaTemperatura (Empty) returns (StringResponse) {}
+}
+
+message Empty {}
+
+message StringResponse {
+  string mensagem = 1;
+}
